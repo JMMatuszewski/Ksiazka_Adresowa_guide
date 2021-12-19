@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1639845496 source:d:\git_jmm\pprogramista\ksiazka_adresowa_guide\uzytkownik.cpp
+	"Uzytkownik.h"
+
+1639907409 source:d:\git_jmm\pprogramista\ksiazka_adresowa_guide\main.cpp
+	<iostream>
+	"KsiazkaAdresowa.h"
+
+1639907603 d:\git_jmm\pprogramista\ksiazka_adresowa_guide\ksiazkaadresowa.h
+	<iostream>
+	"UzytkownikMenedzer.h"
+
+1639907369 d:\git_jmm\pprogramista\ksiazka_adresowa_guide\uzytkownik.h
+	<iostream>
+
+1639906829 source:d:\git_jmm\pprogramista\ksiazka_adresowa_guide\ksiazkaadresowa.cpp
+	"KsiazkaAdresowa.h"
+
+1639903861 source:d:\git_jmm\pprogramista\ksiazka_adresowa_guide\metodypomocnicze.cpp
+	"MetodyPomocnicze.h"
+	<sstream>
+
+1639907603 d:\git_jmm\pprogramista\ksiazka_adresowa_guide\metodypomocnicze.h
+	<iostream>
+
+1639908000 d:\git_jmm\pprogramista\ksiazka_adresowa_guide\uzytkownikmenedzer.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+	"Uzytkownik.h"
+	"PlikZUzytkownikami.h"
+
+1639908167 d:\git_jmm\pprogramista\ksiazka_adresowa_guide\plikzuzytkownikami.h
+	<iostream>
+	<vector>
+	<fstream>
+	"Uzytkownik.h"
+	"MetodyPomocnicze.h"
+
+1639908167 source:d:\git_jmm\pprogramista\ksiazka_adresowa_guide\plikzuzytkownikami.cpp
+	"PlikZUzytkownikami.h"
+
+1639908000 source:d:\git_jmm\pprogramista\ksiazka_adresowa_guide\uzytkownikmenedzer.cpp
+	"UzytkownikMenedzer.h"
+
