@@ -20,9 +20,9 @@ class KsiazkaAdresowa
     //int idUsunietegoAdresata;
 
 public:
+    KsiazkaAdresowa();
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
-    //KsiazkaAdresowa();
 };
 
 #endif

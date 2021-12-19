@@ -69,3 +69,5 @@ void UzytkownikMenedzer::wczytajUzytkownikowZPliku()
 
 }
 
+
+
