@@ -49,7 +49,7 @@ string PlikZUzytkownikami::zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowym
     return liniaZDanymiUzytkownika;
 }
 
-void PlikZUzytkownikami::wczytajUzytkownikowZPliku()
+void PlikZUzytkownikami::wczytajUzytkownikowZPliku(vector <Uzytkownik> &uzytkownicy)
 {
     Uzytkownik uzytkownik;
     string daneJednegoUzytkownikaOddzielonePionowymiKreskami = "";
@@ -66,7 +66,7 @@ void PlikZUzytkownikami::wczytajUzytkownikowZPliku()
 
     }
     plikTekstowy.close();
-    return uzytkownicy;
+    //return uzytkownicy;
 }
 
 Uzytkownik PlikZUzytkownikami::pobierzDaneUzytkownika(string daneJednegoUzytkownikaOddzielonePionowymiKreskami)
@@ -86,13 +86,13 @@ Uzytkownik PlikZUzytkownikami::pobierzDaneUzytkownika(string daneJednegoUzytkown
             switch(numerPojedynczejDanejUzytkownika)
             {
             case 1:
-                uzytkownik.id = atoi(pojedynczaDanaUzytkownika.c_str());
+                uzytkownik.ustawId(atoi(pojedynczaDanaUzytkownika.c_str()));
                 break;
             case 2:
-                uzytkownik.login = pojedynczaDanaUzytkownika;
+                uzytkownik.ustawLogin(pojedynczaDanaUzytkownika);
                 break;
             case 3:
-                uzytkownik.haslo = pojedynczaDanaUzytkownika;
+                uzytkownik.ustawHaslo(pojedynczaDanaUzytkownika);
                 break;
             }
             pojedynczaDanaUzytkownika = "";

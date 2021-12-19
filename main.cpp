@@ -8,6 +8,9 @@ int main()
 {
     KsiazkaAdresowa ksiazkaAdresowa;
     //KsiazkaAdresowa.wczytajUzytkownikowZPliku();
+    //ksiazkaAdresowa.rejestracjaUzytkownika();
+    //ksiazkaAdresowa.rejestracjaUzytkownika();
+    ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
     ksiazkaAdresowa.rejestracjaUzytkownika();
     ksiazkaAdresowa.rejestracjaUzytkownika();
     ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
