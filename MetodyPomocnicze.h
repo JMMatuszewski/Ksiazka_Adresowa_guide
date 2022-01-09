@@ -10,6 +10,7 @@ class MetodyPomocnicze
 public:
     static string konwerjsaIntNaString(int liczba);
     static string wczytajLinie();
+    static char wczytajZnak();      //ogarnac static why it works with it
 };
 
 #endif

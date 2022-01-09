@@ -5,6 +5,24 @@ KsiazkaAdresowa::KsiazkaAdresowa()
     uzytkownikMenedzer.wczytajUzytkownikowZPliku();
 }
 */
+
+char KsiazkaAdresowa::wybierzOpcjeZMenuGlownego()
+{
+    char wybor;
+
+    system("cls");
+    cout << "    >>> MENU  GLOWNE <<<" << endl;
+    cout << "---------------------------" << endl;
+    cout << "1. Rejestracja" << endl;
+    cout << "2. Logowanie" << endl;
+    cout << "9. Koniec programu" << endl;
+    cout << "---------------------------" << endl;
+    cout << "Twoj wybor: ";
+    wybor = MetodyPomocnicze::wczytajZnak();
+
+    return wybor;
+}
+
 void KsiazkaAdresowa::rejestracjaUzytkownika()
 {
     uzytkownikMenedzer.rejestracjaUzytkownika();
@@ -20,14 +38,19 @@ int KsiazkaAdresowa::logowanieUzytkownika()
     uzytkownikMenedzer.logowanieUzytkownika();
 }
 
-void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika(int id)
+void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika(int idUzytkownika)
 {
-    uzytkownikMenedzer.zmianaHaslaZalogowanegoUzytkownika(id);
+    uzytkownikMenedzer.zmianaHaslaZalogowanegoUzytkownika(idUzytkownika);
 }
 
 int KsiazkaAdresowa::wylogowanieUzytkownika()
 {
     uzytkownikMenedzer.wylogowanieUzytkownika();
+}
+
+int KsiazkaAdresowa::menuUzytkownika(int idUzytkownika)
+{
+    adresaciMenedzer.menuUzytkownika(idUzytkownika);
 }
 /*
 KsiazkaAdresowa::KsiazkaAdresowa()
