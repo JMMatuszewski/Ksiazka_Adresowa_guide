@@ -7,41 +7,23 @@ using namespace std;
 int main()
 {
     int idUzytkownika = 0;
-    char wybor;
+    int idOstatniegoAdresata;
+    //char wybor;
     KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy2.txt");
 
+    //wybor = ksiazkaAdresowa.wybierzOpcjeZMenuGlownego();
+    ksiazkaAdresowa.wczytajUzytkownikowZPliku();
+    ksiazkaAdresowa.rejestracjaUzytkownika();
+    idUzytkownika = ksiazkaAdresowa.logowanieUzytkownika();
+    ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika(idUzytkownika);
+    ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
+    ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idUzytkownika);
+
+    //idUzytkownika = ksiazkaAdresowa.menuUzytkownika(idUzytkownika);
 
 
-    while(true)
-    {
-        if (idUzytkownika == 0)
-        {
-            wybor = ksiazkaAdresowa.wybierzOpcjeZMenuGlownego();
-            switch (wybor)
-            {
-            case '1':
-                ksiazkaAdresowa.rejestracjaUzytkownika();
-                break;
-            case '2':
-                idUzytkownika = ksiazkaAdresowa.logowanieUzytkownika();
-                break;
-            case '9':
-                exit(0);
-                break;
-            default:
-                cout << endl << "Nie ma takiej opcji w menu." << endl << endl;
-                system("pause");
-                break;
-            }
-        }
-        else
-        {
-            idUzytkownika = ksiazkaAdresowa.menuUzytkownika(idUzytkownika);
-        }
 
-    }
-
-
+    idUzytkownika = ksiazkaAdresowa.wylogowanieUzytkownika();
 
 
     //KsiazkaAdresowa.wczytajUzytkownikowZPliku();

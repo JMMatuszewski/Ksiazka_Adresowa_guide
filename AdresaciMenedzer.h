@@ -18,17 +18,15 @@ using namespace std;
 
 class AdresaciMenedzer
 {
-    char wybor;
-    int idOstatniegoAdresata;
     vector <Adresat> adresaci;
+    PlikZAdresatami plikZAdresatami;
 
-    int wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idZalogowanegoUzytkownika);
-    char wybierzOpcjeZMenuUzytkownika();
+    int idOstatniegoAdresata;
+    //char wybierzOpcjeZMenuUzytkownika();
 
 public:
-    AdresaciMenedzer(string nazwaPlikuZUzytkownikami) : plikZAdresatami(nazwaPlikuZUzytkownikami){};
 
-    int menuUzytkownika(int idUzytkownika);
+    void wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idUzytkownika);
 
 };
 

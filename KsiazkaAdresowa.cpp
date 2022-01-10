@@ -48,11 +48,18 @@ int KsiazkaAdresowa::wylogowanieUzytkownika()
     uzytkownikMenedzer.wylogowanieUzytkownika();
 }
 
+void KsiazkaAdresowa::wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idUzytkownika)
+{
+    adresaciMenedzer.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idUzytkownika);
+}
+
+/*
+
 int KsiazkaAdresowa::menuUzytkownika(int idUzytkownika)
 {
     adresaciMenedzer.menuUzytkownika(idUzytkownika);
 }
-/*
+
 KsiazkaAdresowa::KsiazkaAdresowa()
 {
     nazwaPlikuZUzytkownikami = "Uzytkownicy.txt";

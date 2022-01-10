@@ -16,7 +16,9 @@ using namespace std;
 class KsiazkaAdresowa
 {
     UzytkownikMenedzer uzytkownikMenedzer;
-    AdresaciMenedzer adresaciMenedzer("Adresaci.txt");
+    int idUzytkownika;
+
+    AdresaciMenedzer adresaciMenedzer;
 
 
     //int idOstatniegoAdresata;
@@ -31,10 +33,11 @@ public:
     int logowanieUzytkownika();
     void zmianaHaslaZalogowanegoUzytkownika(int idUzytkownika);
     int wylogowanieUzytkownika();
-    ////////////////////////////////////////////////
-    int menuUzytkownika(int idUzytkownika);
-    /////////////////////////////////////////
+    //int menuUzytkownika(int idUzytkownika);
     void wypiszWszystkichUzytkownikow();
+    /////////////////////////////////////
+    void wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idUzytkownika);
+
 
 };
 
