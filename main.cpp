@@ -12,42 +12,43 @@ int main()
     KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy2.txt");
 
     //wybor = ksiazkaAdresowa.wybierzOpcjeZMenuGlownego();
-    ksiazkaAdresowa.wczytajUzytkownikowZPliku();
-    ksiazkaAdresowa.rejestracjaUzytkownika();
+    //ksiazkaAdresowa.rejestracjaUzytkownika();
+    cout << "\nWypisanie:\n";
+    ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
+
+    cout << "\nLogowanie:\n";
     idUzytkownika = ksiazkaAdresowa.logowanieUzytkownika();
+
+    cout << "\nZmiana hasla:\n";
     ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika(idUzytkownika);
+
+    cout << "\nWypisanie:\n";
     ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
+
+    cout << "\nWczytanie adresatow:\n";
     ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idUzytkownika);
+    system("pause");
 
-    //idUzytkownika = ksiazkaAdresowa.menuUzytkownika(idUzytkownika);
+    cout << "\nWypisanie adresatow:\n";
+    ksiazkaAdresowa.wyswietlWszystkichAdresatow();
 
+    cout << "\nDodanie adresata\n";
+    ksiazkaAdresowa.dodajAdresata(idUzytkownika);
 
+    cout << "\nWczytanie adresatow:\n";
+    ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idUzytkownika);
+    system("pause");
 
-    idUzytkownika = ksiazkaAdresowa.wylogowanieUzytkownika();
-
-
-    //KsiazkaAdresowa.wczytajUzytkownikowZPliku();
-    //ksiazkaAdresowa.rejestracjaUzytkownika();
-    //ksiazkaAdresowa.rejestracjaUzytkownika();
-    //ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
-    //idUzytkownika = ksiazkaAdresowa.logowanieUzytkownika();
-    //ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika(idUzytkownika);
-
-
-
-
-
-
-
-
-
-
+    cout << "\nWypisanie adresatow:\n";
+    ksiazkaAdresowa.wyswietlWszystkichAdresatow();
 
     idUzytkownika = ksiazkaAdresowa.wylogowanieUzytkownika();
 
-    //ksiazkaAdresowa.rejestracjaUzytkownika();
-    //ksiazkaAdresowa.rejestracjaUzytkownika();
-    ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
     cout << idUzytkownika << endl;
+
+    //ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika(idUzytkownika);
+    //idUzytkownika = ksiazkaAdresowa.menuUzytkownika(idUzytkownika);
+    //KsiazkaAdresowa.wczytajUzytkownikowZPliku();
+    //idUzytkownika = ksiazkaAdresowa.wylogowanieUzytkownika();
     return 0;
 }

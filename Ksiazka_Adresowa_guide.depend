@@ -45,16 +45,16 @@
 1639908000 source:d:\git_jmm\pprogramista\ksiazka_adresowa_guide\uzytkownikmenedzer.cpp
 	"UzytkownikMenedzer.h"
 
-1641841437 source:d:\repos\ksiazka_adresowa_guide\ksiazkaadresowa.cpp
+1642346943 source:d:\repos\ksiazka_adresowa_guide\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
-1641841587 d:\repos\ksiazka_adresowa_guide\ksiazkaadresowa.h
+1642346943 d:\repos\ksiazka_adresowa_guide\ksiazkaadresowa.h
 	<iostream>
 	"UzytkownikMenedzer.h"
 	"MetodyPomocnicze.h"
 	"AdresaciMenedzer.h"
 
-1641834492 d:\repos\ksiazka_adresowa_guide\uzytkownikmenedzer.h
+1641841875 d:\repos\ksiazka_adresowa_guide\uzytkownikmenedzer.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -67,40 +67,41 @@
 1639907369 d:\repos\ksiazka_adresowa_guide\uzytkownik.h
 	<iostream>
 
-1641834492 d:\repos\ksiazka_adresowa_guide\plikzuzytkownikami.h
+1641841875 d:\repos\ksiazka_adresowa_guide\plikzuzytkownikami.h
 	<iostream>
 	<vector>
 	<fstream>
 	"Uzytkownik.h"
 	"MetodyPomocnicze.h"
 
-1641834492 d:\repos\ksiazka_adresowa_guide\metodypomocnicze.h
+1642347470 d:\repos\ksiazka_adresowa_guide\metodypomocnicze.h
 	<iostream>
+	<algorithm>
 
-1641834492 source:d:\repos\ksiazka_adresowa_guide\metodypomocnicze.cpp
+1642347165 source:d:\repos\ksiazka_adresowa_guide\metodypomocnicze.cpp
 	"MetodyPomocnicze.h"
 	<sstream>
 
-1641834492 source:d:\repos\ksiazka_adresowa_guide\plikzuzytkownikami.cpp
+1642331232 source:d:\repos\ksiazka_adresowa_guide\plikzuzytkownikami.cpp
 	"PlikZUzytkownikami.h"
 
 1639845496 source:d:\repos\ksiazka_adresowa_guide\uzytkownik.cpp
 	"Uzytkownik.h"
 
-1641834492 source:d:\repos\ksiazka_adresowa_guide\uzytkownikmenedzer.cpp
+1641927048 source:d:\repos\ksiazka_adresowa_guide\uzytkownikmenedzer.cpp
 	"UzytkownikMenedzer.h"
 
-1641643486 source:d:\repos\ksiazka_adresowa_guide\main.cpp
+1642348194 source:d:\repos\ksiazka_adresowa_guide\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
 
-1641834492 source:d:\repos\ksiazka_adresowa_guide\adresat.cpp
+1641841875 source:d:\repos\ksiazka_adresowa_guide\adresat.cpp
 	"Adresat.h"
 
-1641834492 d:\repos\ksiazka_adresowa_guide\adresat.h
+1641841875 d:\repos\ksiazka_adresowa_guide\adresat.h
 	<iostream>
 
-1641841529 d:\repos\ksiazka_adresowa_guide\adresacimenedzer.h
+1642347230 d:\repos\ksiazka_adresowa_guide\adresacimenedzer.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -109,13 +110,11 @@
 	"Adresat.h"
 	"MetodyPomocnicze.h"
 	"PlikZAdresatami.h"
-	"UzytkownikMenedzer.h"
-	"Uzytkownik.h"
 
-1641841529 source:d:\repos\ksiazka_adresowa_guide\adresacimenedzer.cpp
+1642347565 source:d:\repos\ksiazka_adresowa_guide\adresacimenedzer.cpp
 	"AdresaciMenedzer.h"
 
-1641841437 d:\repos\ksiazka_adresowa_guide\plikzadresatami.h
+1642346943 d:\repos\ksiazka_adresowa_guide\plikzadresatami.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -123,4 +122,7 @@
 	<sstream>
 	"Adresat.h"
 	"MetodyPomocnicze.h"
+
+1642347625 source:d:\repos\ksiazka_adresowa_guide\plikzadresatami.cpp
+	"PlikZAdresatami.h"
 

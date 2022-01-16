@@ -53,6 +53,15 @@ void KsiazkaAdresowa::wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idUzytko
     adresaciMenedzer.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idUzytkownika);
 }
 
+void KsiazkaAdresowa::wyswietlWszystkichAdresatow()
+{
+    adresaciMenedzer.wyswietlWszystkichAdresatow();
+}
+
+void KsiazkaAdresowa::dodajAdresata(int idUzytkownika)
+{
+    adresaciMenedzer.dodajAdresata(idUzytkownika);
+}
 /*
 
 int KsiazkaAdresowa::menuUzytkownika(int idUzytkownika)

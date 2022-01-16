@@ -21,7 +21,7 @@ Uzytkownik UzytkownikMenedzer::podajDaneNowegoUzytkownika()
     do
     {
         cout << "Podaj login: ";
-        cin >> login;
+        login = MetodyPomocnicze::wczytajLinie();
         uzytkownik.ustawLogin(login);
     } while (czyIstniejeLogin(uzytkownik.pobierzLogin()) == true);
 
@@ -102,7 +102,7 @@ void UzytkownikMenedzer::zmianaHaslaZalogowanegoUzytkownika(int idZalogowanegoUz
         if (itr -> pobierzId() == idZalogowanegoUzytkownika)
         {
             itr -> ustawHaslo(noweHaslo);
-            cout << "Haslo zostalo zmienione." << endl << endl;
+            cout << "Haslo zostalo zmienione." << endl;
             system("pause");
         }
     }

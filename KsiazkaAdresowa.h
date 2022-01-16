@@ -37,6 +37,8 @@ public:
     void wypiszWszystkichUzytkownikow();
     /////////////////////////////////////
     void wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idUzytkownika);
+    void wyswietlWszystkichAdresatow();
+    void dodajAdresata(int idUzytkownika);
 
 
 };
