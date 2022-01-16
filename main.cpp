@@ -44,6 +44,7 @@ int main()
 
     idUzytkownika = ksiazkaAdresowa.wylogowanieUzytkownika();
 
+    cout << "\nWylogowanie\n";
     cout << idUzytkownika << endl;
 
     //ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika(idUzytkownika);
