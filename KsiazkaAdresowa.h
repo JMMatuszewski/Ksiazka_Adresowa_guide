@@ -31,7 +31,7 @@ public:
     char wybierzOpcjeZMenuGlownego();
     void rejestracjaUzytkownika();
     int logowanieUzytkownika();
-    void zmianaHaslaZalogowanegoUzytkownika(int idUzytkownika);
+    void zmianaHaslaZalogowanegoUzytkownika();
     int wylogowanieUzytkownika();
     //int menuUzytkownika(int idUzytkownika);
     void wypiszWszystkichUzytkownikow();

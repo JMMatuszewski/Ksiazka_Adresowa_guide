@@ -19,18 +19,15 @@ int main()
     cout << "\nRejestracja\n";
     ksiazkaAdresowa.rejestracjaUzytkownika();
 
-    cout << "Wypisanie:\n";
-    ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
-/*
-    cout << "\nLogowanie:";
+    cout << "\nLogowanie:\n";
     idUzytkownika = ksiazkaAdresowa.logowanieUzytkownika();
 
     cout << "\nZmiana hasla:\n";
-    ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika(idUzytkownika);
+    ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika(); //idUzytkownika
 
     cout << "\nWypisanie:\n";
     ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
-
+/*
     cout << "\nWczytanie adresatow:\n";
     ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idUzytkownika);
     system("pause");

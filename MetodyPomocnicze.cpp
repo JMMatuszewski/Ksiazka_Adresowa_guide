@@ -12,10 +12,7 @@ string MetodyPomocnicze::konwerjsaIntNaString(int liczba)
 string MetodyPomocnicze::wczytajLinie()
 {
     string wejscie = "";
-    //cin.ignore();
     getline(cin, wejscie);
-    //cout << "\nMetodyPomocnicze\n";
-    //cout << wejscie;
     return wejscie;
 }
 
