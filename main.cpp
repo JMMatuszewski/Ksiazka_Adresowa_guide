@@ -7,16 +7,22 @@ using namespace std;
 int main()
 {
     int idUzytkownika = 0;
-    int idOstatniegoAdresata;
+    int idOstatniegoAdresata=0;
     //char wybor;
-    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy2.txt");
+    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy3.txt");
 
     //wybor = ksiazkaAdresowa.wybierzOpcjeZMenuGlownego();
     //ksiazkaAdresowa.rejestracjaUzytkownika();
-    cout << "\nWypisanie:\n";
+    cout << "Wypisanie:\n";
     ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
 
-    cout << "\nLogowanie:\n";
+    cout << "\nRejestracja\n";
+    ksiazkaAdresowa.rejestracjaUzytkownika();
+
+    cout << "Wypisanie:\n";
+    ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
+/*
+    cout << "\nLogowanie:";
     idUzytkownika = ksiazkaAdresowa.logowanieUzytkownika();
 
     cout << "\nZmiana hasla:\n";
@@ -46,7 +52,7 @@ int main()
 
     cout << "\nWylogowanie\n";
     cout << idUzytkownika << endl;
-
+*/
     //ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika(idUzytkownika);
     //idUzytkownika = ksiazkaAdresowa.menuUzytkownika(idUzytkownika);
     //KsiazkaAdresowa.wczytajUzytkownikowZPliku();

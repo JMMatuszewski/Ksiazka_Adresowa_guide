@@ -17,7 +17,7 @@ Uzytkownik UzytkownikMenedzer::podajDaneNowegoUzytkownika()
 
     uzytkownik.ustawId(pobierzIdNowegoUzytkownika());
 
-    string login;
+    string login = "";
     do
     {
         cout << "Podaj login: ";
