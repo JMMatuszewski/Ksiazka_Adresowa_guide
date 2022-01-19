@@ -25,6 +25,8 @@ class KsiazkaAdresowa
     //int idUsunietegoAdresata;
 
 public:
+    //UzytkownikMenedzer uzytkownikMenedzer;  //PRAWDOPODOBNIE BLAD ZE PUBLIC
+
     KsiazkaAdresowa(string nazwaPlikuZUzytkownikami) : uzytkownikMenedzer(nazwaPlikuZUzytkownikami){
     uzytkownikMenedzer.wczytajUzytkownikowZPliku();
     };
@@ -35,10 +37,10 @@ public:
     int wylogowanieUzytkownika();
     //int menuUzytkownika(int idUzytkownika);
     void wypiszWszystkichUzytkownikow();
-    /////////////////////////////////////
-    void wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idUzytkownika);
+    ////////////// ADRESACI /////////////
+    void wczytajAdresatowZalogowanegoUzytkownikaZPliku();
     void wyswietlWszystkichAdresatow();
-    void dodajAdresata(int idUzytkownika);
+    void dodajAdresata();
 
 
 };

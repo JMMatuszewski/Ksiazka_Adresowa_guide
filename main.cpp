@@ -6,8 +6,8 @@ using namespace std;
 
 int main()
 {
-    int idUzytkownika = 0;
-    int idOstatniegoAdresata=0;
+    //int idUzytkownika = 0;
+    //int idOstatniegoAdresata=0;
     //char wybor;
     KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy3.txt");
 
@@ -20,31 +20,31 @@ int main()
     ksiazkaAdresowa.rejestracjaUzytkownika();
 
     cout << "\nLogowanie:\n";
-    idUzytkownika = ksiazkaAdresowa.logowanieUzytkownika();
+    ksiazkaAdresowa.logowanieUzytkownika(); //ksiazkaAdresowa.uzytkownikMenedzer.idZalogowanegoUzytkownika = ksiazkaAdresowa.logowanieUzytkownika();
 
-    cout << "\nZmiana hasla:\n";
-    ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika(); //idUzytkownika
+    //cout << "\nZmiana hasla:\n";
+    //ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika(); //idUzytkownika
 
-    cout << "\nWypisanie:\n";
-    ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
-/*
+    //cout << "\nWypisanie:\n";
+    //ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
+
     cout << "\nWczytanie adresatow:\n";
-    ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idUzytkownika);
+    ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku();
     system("pause");
 
     cout << "\nWypisanie adresatow:\n";
     ksiazkaAdresowa.wyswietlWszystkichAdresatow();
 
     cout << "\nDodanie adresata\n";
-    ksiazkaAdresowa.dodajAdresata(idUzytkownika);
+    ksiazkaAdresowa.dodajAdresata();
 
     cout << "\nWczytanie adresatow:\n";
-    ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idUzytkownika);
+    ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku();
     system("pause");
 
     cout << "\nWypisanie adresatow:\n";
     ksiazkaAdresowa.wyswietlWszystkichAdresatow();
-
+/*
     idUzytkownika = ksiazkaAdresowa.wylogowanieUzytkownika();
 
     cout << "\nWylogowanie\n";

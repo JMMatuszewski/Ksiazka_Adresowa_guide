@@ -4,7 +4,7 @@ int PlikZAdresatami::wczytajAdresatowZalogowanegoUzytkownikaZPliku(vector<Adresa
 {
     string nazwaPlikuZAdresatami = "Adresaci.txt";
     Adresat adresat;
-    int idOstatniegoAdresata = 0;
+    int idOstatniegoAdresata;
     string daneJednegoAdresataOddzielonePionowymiKreskami = "";
     string daneOstaniegoAdresataWPliku = "";
     fstream plikTekstowy;

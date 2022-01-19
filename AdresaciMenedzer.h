@@ -24,7 +24,7 @@ class AdresaciMenedzer
     int idOstatniegoAdresata;
     //char wybierzOpcjeZMenuUzytkownika();
     void wyswietlDaneAdresata(Adresat adresat);
-    Adresat podajDaneNowegoAdresata(int idUzytkownika, int idOstatniegoAdresata);
+    Adresat podajDaneNowegoAdresata(int idUzytkownika);//, int idOstatniegoAdresata
 
 public:
 
