@@ -2,14 +2,14 @@
 
 int PlikZAdresatami::wczytajAdresatowZalogowanegoUzytkownikaZPliku(vector<Adresat> *adresaci, int idZalogowanegoUzytkownika)
 {
-    string nazwaPlikuZAdresatami = "Adresaci.txt";
+    //string nazwaPlikuZAdresatami = "Adresaci.txt";
     Adresat adresat;
     int idOstatniegoAdresata;
     string daneJednegoAdresataOddzielonePionowymiKreskami = "";
     string daneOstaniegoAdresataWPliku = "";
     fstream plikTekstowy;
     adresaci->clear();
-    plikTekstowy.open(nazwaPlikuZAdresatami.c_str(), ios::in);  //nazwaPlikuZAdresatami
+    plikTekstowy.open(NAZWA_PLIKU_Z_ADRESATAMI.c_str(), ios::in);  //nazwaPlikuZAdresatami
 
     if (plikTekstowy.good() == true)
     {
@@ -100,10 +100,10 @@ int PlikZAdresatami::pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(strin
 
 void PlikZAdresatami::dopiszAdresataDoPliku(Adresat adresat)
 {
-    string nazwaPlikuZAdresatami = "Adresaci.txt";
+    //string nazwaPlikuZAdresatami = "Adresaci.txt";
     string liniaZDanymiAdresata = "";
     fstream plikTekstowy;
-    plikTekstowy.open(nazwaPlikuZAdresatami.c_str(), ios::out | ios::app);
+    plikTekstowy.open(NAZWA_PLIKU_Z_ADRESATAMI.c_str(), ios::out | ios::app);
 
     if (plikTekstowy.good() == true)
     {

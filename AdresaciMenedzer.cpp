@@ -18,7 +18,7 @@ void AdresaciMenedzer::dodajAdresata(int idZalogowanegoUzytkownika)
     plikZAdresatami.dopiszAdresataDoPliku(adresat);
 
     //return ++idOstatniegoAdresata;
-    ++idOstatniegoAdresata;
+    //++idOstatniegoAdresata;
 }
 
 Adresat AdresaciMenedzer::podajDaneNowegoAdresata(int idZalogowanegoUzytkownika)//, int idOstatniegoAdresata

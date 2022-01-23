@@ -16,19 +16,16 @@ using namespace std;
 class KsiazkaAdresowa
 {
     UzytkownikMenedzer uzytkownikMenedzer;
-    int idUzytkownika;
-
     AdresaciMenedzer adresaciMenedzer;
-
-
-    //int idOstatniegoAdresata;
-    //int idUsunietegoAdresata;
+    /////////////////////////////////////////
+    int idUzytkownika;
+    //const string NAZWA_PLIKU_Z_ADRESATAMI;
 
 public:
-    //UzytkownikMenedzer uzytkownikMenedzer;  //PRAWDOPODOBNIE BLAD ZE PUBLIC
 
-    KsiazkaAdresowa(string nazwaPlikuZUzytkownikami) : uzytkownikMenedzer(nazwaPlikuZUzytkownikami){
-    uzytkownikMenedzer.wczytajUzytkownikowZPliku();
+    KsiazkaAdresowa(string NAZWAPLIKUZUZYTKOWNIKAMI, string NAZWAPLIKUZADRESATAMI)
+    : uzytkownikMenedzer(NAZWAPLIKUZUZYTKOWNIKAMI), adresaciMenedzer(NAZWAPLIKUZADRESATAMI){
+//nazwaPlikuZUzytkownikami
     };
     char wybierzOpcjeZMenuGlownego();
     void rejestracjaUzytkownika();
@@ -38,7 +35,7 @@ public:
     //int menuUzytkownika(int idUzytkownika);
     void wypiszWszystkichUzytkownikow();
     ////////////// ADRESACI /////////////
-    void wczytajAdresatowZalogowanegoUzytkownikaZPliku();
+    //void wczytajAdresatowZalogowanegoUzytkownikaZPliku();
     void wyswietlWszystkichAdresatow();
     void dodajAdresata();
 

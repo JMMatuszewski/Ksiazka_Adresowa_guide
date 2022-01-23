@@ -36,6 +36,8 @@ void KsiazkaAdresowa::wypiszWszystkichUzytkownikow()
 int KsiazkaAdresowa::logowanieUzytkownika()
 {
     idUzytkownika = uzytkownikMenedzer.logowanieUzytkownika();
+    cout << "\nWczytanie adresatow:\n";
+    adresaciMenedzer.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idUzytkownika);
 }
 
 void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika()
@@ -47,12 +49,12 @@ int KsiazkaAdresowa::wylogowanieUzytkownika()
 {
     uzytkownikMenedzer.wylogowanieUzytkownika();
 }
-
+/*
 void KsiazkaAdresowa::wczytajAdresatowZalogowanegoUzytkownikaZPliku()
 {
     adresaciMenedzer.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idUzytkownika);
 }
-
+*/
 void KsiazkaAdresowa::wyswietlWszystkichAdresatow()
 {
     adresaciMenedzer.wyswietlWszystkichAdresatow();
