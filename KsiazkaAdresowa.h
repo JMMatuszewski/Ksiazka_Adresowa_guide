@@ -16,20 +16,26 @@ using namespace std;
 class KsiazkaAdresowa
 {
     UzytkownikMenedzer uzytkownikMenedzer;
-    AdresaciMenedzer adresaciMenedzer;
+    AdresaciMenedzer *adresaciMenedzer;
     /////////////////////////////////////////
-    int idUzytkownika;
-    //const string NAZWA_PLIKU_Z_ADRESATAMI;
+    //int idUzytkownika;
+    const string NAZWA_PLIKU_Z_ADRESATAMI;
 
 public:
 
-    KsiazkaAdresowa(string NAZWAPLIKUZUZYTKOWNIKAMI, string NAZWAPLIKUZADRESATAMI)
-    : uzytkownikMenedzer(NAZWAPLIKUZUZYTKOWNIKAMI), adresaciMenedzer(NAZWAPLIKUZADRESATAMI){
-//nazwaPlikuZUzytkownikami
+    KsiazkaAdresowa(string NAZWAPLIKUZUZYTKOWNIKAMI, string nazwaPlikuZAdresatami)
+    : uzytkownikMenedzer(NAZWAPLIKUZUZYTKOWNIKAMI), NAZWA_PLIKU_Z_ADRESATAMI(nazwaPlikuZAdresatami)//adresaciMenedzer
+    {
+        adresaciMenedzer = NULL;
+    };
+    ~KsiazkaAdresowa()  //DESTRUKTOR
+    {
+        delete adresaciMenedzer;
+        adresaciMenedzer = NULL;
     };
     char wybierzOpcjeZMenuGlownego();
     void rejestracjaUzytkownika();
-    int logowanieUzytkownika();
+    void logowanieUzytkownika();
     void zmianaHaslaZalogowanegoUzytkownika();
     int wylogowanieUzytkownika();
     //int menuUzytkownika(int idUzytkownika);
