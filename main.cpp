@@ -23,9 +23,9 @@ int main()
     cout << "\nLogowanie:\n";
     ksiazkaAdresowa.logowanieUzytkownika();
 
-    //cout << "\nZmiana hasla:\n";
-    //ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika(); //idUzytkownika
-/*
+    cout << "\nZmiana hasla:\n";
+    ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika(); //idUzytkownika
+
     cout << "\nWypisanie adresatow:\n";
     ksiazkaAdresowa.wyswietlWszystkichAdresatow();
 
@@ -37,7 +37,7 @@ int main()
 
     cout << "\nWypisanie adresatow:\n";
     ksiazkaAdresowa.wyswietlWszystkichAdresatow();
-*/
+
     ksiazkaAdresowa.wylogowanieUzytkownika();
     cout << "\nWylogowanie\n";
 

@@ -11,9 +11,6 @@
 #include "MetodyPomocnicze.h"
 #include "PlikZAdresatami.h"
 
-//#include "UzytkownikMenedzer.h"
-//#include "Uzytkownik.h"
-
 using namespace std;
 
 class AdresaciMenedzer
@@ -24,7 +21,6 @@ class AdresaciMenedzer
 /////////////// MENU //////////////////
     //char wybierzOpcjeZMenuUzytkownika();
 ///////////////////////////////////////
-    //int idOstatniegoAdresata;
     void wyswietlDaneAdresata(Adresat adresat);
     Adresat podajDaneNowegoAdresata();//, int idOstatniegoAdresata // Adresat
 
@@ -35,9 +31,8 @@ public:
         adresaci = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(ID_ZALOGOWANEGO_UZYTKOWNIKA);
     };
 
-    //void wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idUzytkownika);
     void wyswietlWszystkichAdresatow();
-    void dodajAdresata();//int idUzytkownika
+    void dodajAdresata();
 };
 
 #endif

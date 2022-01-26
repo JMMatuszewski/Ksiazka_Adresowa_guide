@@ -2,10 +2,6 @@
 #define KSIAZKAADRESOWA_H
 
 #include <iostream>
-//#include <vector>
-//#include <windows.h>
-//#include <fstream>
-//#include <sstream>
 
 #include "UzytkownikMenedzer.h"
 #include "MetodyPomocnicze.h"
@@ -41,7 +37,6 @@ public:
     //int menuUzytkownika(int idUzytkownika);
     void wypiszWszystkichUzytkownikow();
     ////////////// ADRESACI /////////////
-    //void wczytajAdresatowZalogowanegoUzytkownikaZPliku();
     void wyswietlWszystkichAdresatow();
     void dodajAdresata();
 

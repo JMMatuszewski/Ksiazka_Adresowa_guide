@@ -1,10 +1,4 @@
 #include "KsiazkaAdresowa.h"
-/*
-KsiazkaAdresowa::KsiazkaAdresowa()
-{
-    uzytkownikMenedzer.wczytajUzytkownikowZPliku();
-}
-*/
 
 char KsiazkaAdresowa::wybierzOpcjeZMenuGlownego()
 {
@@ -55,12 +49,7 @@ int KsiazkaAdresowa::wylogowanieUzytkownika()
     delete adresaciMenedzer;
     adresaciMenedzer = NULL;
 }
-/*
-void KsiazkaAdresowa::wczytajAdresatowZalogowanegoUzytkownikaZPliku()
-{
-    adresaciMenedzer.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idUzytkownika);
-}
-*/
+
 void KsiazkaAdresowa::wyswietlWszystkichAdresatow()
 {
     adresaciMenedzer->wyswietlWszystkichAdresatow();
@@ -85,10 +74,4 @@ int KsiazkaAdresowa::menuUzytkownika(int idUzytkownika)
 {
     adresaciMenedzer.menuUzytkownika(idUzytkownika);
 }
-
-KsiazkaAdresowa::KsiazkaAdresowa()
-{
-    nazwaPlikuZUzytkownikami = "Uzytkownicy.txt";
-}
-
 */

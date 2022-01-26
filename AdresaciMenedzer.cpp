@@ -1,10 +1,5 @@
 #include "AdresaciMenedzer.h"
-/*
-void AdresaciMenedzer::wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idUzytkownika)
-{
-    idOstatniegoAdresata = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(&adresaci, idUzytkownika);
-}
-*/
+
 void AdresaciMenedzer::dodajAdresata()//int idZalogowanegoUzytkownika
 {
     //plikZAdresatami.dodajAdresata(adresaci, idUzytkownika, idOstatniegoAdresata);
@@ -24,9 +19,6 @@ void AdresaciMenedzer::dodajAdresata()//int idZalogowanegoUzytkownika
         cout << "Nie udalo sie dodac nowego adresata" << endl;
     }
     system("pause");
-
-    //return ++idOstatniegoAdresata;
-    //++idOstatniegoAdresata;
 }
 
 Adresat AdresaciMenedzer::podajDaneNowegoAdresata()//int idZalogowanegoUzytkownika, int idOstatniegoAdresata
