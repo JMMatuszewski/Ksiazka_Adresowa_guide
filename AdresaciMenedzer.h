@@ -21,8 +21,14 @@ class AdresaciMenedzer
 /////////////// MENU //////////////////
     //char wybierzOpcjeZMenuUzytkownika();
 ///////////////////////////////////////
+    Adresat podajDaneNowegoAdresata();
     void wyswietlDaneAdresata(Adresat adresat);
-    Adresat podajDaneNowegoAdresata();//, int idOstatniegoAdresata // Adresat
+    void wyswietlIloscWyszukanychAdresatow(int iloscAdresatow);
+    int podajIdWybranegoAdresata();
+    int wczytajLiczbeCalkowita();
+    char wybierzOpcjeZMenuEdycja();
+    void zaktualizujDaneWybranegoAdresata(Adresat adresat);
+
 
 public:
     AdresaciMenedzer(string NAZWAPLIKUZADRESATAMI, int idZalogowanegoUzytkownika)
@@ -33,6 +39,10 @@ public:
 
     void wyswietlWszystkichAdresatow();
     void dodajAdresata();
+    void wyszukajAdresatowPoImieniu();
+    void wyszukajAdresatowPoNazwisku();
+    void usunAdresata();
+    void edytujAdresata();
 };
 
 #endif

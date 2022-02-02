@@ -29,18 +29,27 @@ public:
         delete adresaciMenedzer;
         adresaciMenedzer = NULL;
     };
+    //////////////// MENU //////////////////
     char wybierzOpcjeZMenuGlownego();
+    char wybierzOpcjeZMenuUzytkownika();
+    ////////////////////////////////////////
+
     void rejestracjaUzytkownika();
     void logowanieUzytkownika();
     void zmianaHaslaZalogowanegoUzytkownika();
     int wylogowanieUzytkownika();
     //int menuUzytkownika(int idUzytkownika);
     void wypiszWszystkichUzytkownikow();
+    int pobierzIdZalogowanegoUzytkownika();
+
     ////////////// ADRESACI /////////////
     void wyswietlWszystkichAdresatow();
     void dodajAdresata();
-
-
+    void wyszukajAdresatowPoImieniu();
+    void wyszukajAdresatowPoNazwisku();
+    void usunAdresata();
+    void edytujAdresata();
+    ////////////////////////////////////////
 };
 
 #endif

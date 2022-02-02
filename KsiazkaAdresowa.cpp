@@ -29,18 +29,19 @@ void KsiazkaAdresowa::wypiszWszystkichUzytkownikow()
 
 void KsiazkaAdresowa::logowanieUzytkownika()
 {
-    uzytkownikMenedzer.logowanieUzytkownika();//idUzytkownika =
+    uzytkownikMenedzer.logowanieUzytkownika();
     if (uzytkownikMenedzer.czyUzytkownikJestZalogowany())
     {
         adresaciMenedzer = new AdresaciMenedzer(NAZWA_PLIKU_Z_ADRESATAMI,uzytkownikMenedzer.pobierzIdZalogowanegoUzytkownika());
         //adresaciMenedzer.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idUzytkownika);
     }
-    cout << "\nWczytanie adresatow:\n";
+    //cout << "\nWczytanie adresatow:\n";
+    //adresaciMenedzer->wyswietlWszystkichAdresatow();//  TEMPORARY //
 }
 
 void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika()
 {
-    uzytkownikMenedzer.zmianaHaslaZalogowanegoUzytkownika();//idUzytkownika
+    uzytkownikMenedzer.zmianaHaslaZalogowanegoUzytkownika();
 }
 
 int KsiazkaAdresowa::wylogowanieUzytkownika()
@@ -67,6 +68,36 @@ void KsiazkaAdresowa::dodajAdresata()
         system("pause");
     }
     //adresaciMenedzer.dodajAdresata(idUzytkownika);
+}
+
+int KsiazkaAdresowa::pobierzIdZalogowanegoUzytkownika()
+{
+    return uzytkownikMenedzer.pobierzIdZalogowanegoUzytkownika();
+}
+
+char KsiazkaAdresowa::wybierzOpcjeZMenuUzytkownika()
+{
+    return uzytkownikMenedzer.wybierzOpcjeZMenuUzytkownika();
+}
+
+void KsiazkaAdresowa::wyszukajAdresatowPoImieniu()
+{
+    adresaciMenedzer->wyszukajAdresatowPoImieniu();
+}
+
+void KsiazkaAdresowa::wyszukajAdresatowPoNazwisku()
+{
+    adresaciMenedzer->wyszukajAdresatowPoNazwisku();
+}
+
+void KsiazkaAdresowa::usunAdresata()
+{
+    adresaciMenedzer->usunAdresata();
+}
+
+void KsiazkaAdresowa::edytujAdresata()
+{
+    adresaciMenedzer->edytujAdresata();
 }
 /*
 

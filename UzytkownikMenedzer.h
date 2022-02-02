@@ -35,6 +35,7 @@ public:
     void wypiszWszystkichUzytkownikow();
     bool czyUzytkownikJestZalogowany();
     int pobierzIdZalogowanegoUzytkownika();
+    char wybierzOpcjeZMenuUzytkownika();
 };
 
 #endif
