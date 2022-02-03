@@ -67,12 +67,13 @@
 1639907369 d:\repos\ksiazka_adresowa_guide\uzytkownik.h
 	<iostream>
 
-1643222113 d:\repos\ksiazka_adresowa_guide\plikzuzytkownikami.h
+1643911965 d:\repos\ksiazka_adresowa_guide\plikzuzytkownikami.h
 	<iostream>
 	<vector>
 	<fstream>
 	"Uzytkownik.h"
 	"MetodyPomocnicze.h"
+	"PlikTekstowy.h"
 
 1642944276 d:\repos\ksiazka_adresowa_guide\metodypomocnicze.h
 	<iostream>
@@ -123,6 +124,8 @@
 	"Adresat.h"
 	"MetodyPomocnicze.h"
 
-1643783466 source:d:\repos\ksiazka_adresowa_guide\plikzadresatami.cpp
+1643829394 source:d:\repos\ksiazka_adresowa_guide\plikzadresatami.cpp
 	"PlikZAdresatami.h"
+
+1643910198 d:\repos\ksiazka_adresowa_guide\pliktekstowy.h
 
