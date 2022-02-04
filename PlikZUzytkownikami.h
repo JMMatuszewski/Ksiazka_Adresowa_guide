@@ -7,7 +7,7 @@
 
 #include "Uzytkownik.h"
 #include "MetodyPomocnicze.h"
-#include "PlikTekstowy.h"//TEST
+#include "PlikTekstowy.h"
 
 using namespace std;
 
